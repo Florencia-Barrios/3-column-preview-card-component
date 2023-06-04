@@ -1,0 +1,141 @@
+:root {
+  --naranja: hsl(31, 77%, 52%);
+  --verdecito: hsl(184, 100%, 22%);
+  --verde: hsl(179, 100%, 13%);
+  --transparentBlanco: hsla(0, 0%, 100%, 0.75);
+  --lightgray: hsl(0, 0%, 95%);
+  --Fuente1: "Lexend Deca", sans-serif;
+  --Fuente2: "Big Shoulders Display", cursive;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* Globales */
+h1 {
+  color: var(--lightgray);
+  font-family: var(--Fuente2);
+  font-size: 2.5em;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--transparentBlanco);
+  font-family: var(--Fuente1);
+  padding-right: 0.5rem;
+  line-height: 1.5rem;
+}
+
+/* Body */
+body {
+  background-color: var(--lightgray);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.contenedor {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 1050px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor {
+    flex-direction: column;
+    width: 85%;
+    max-width: 290px;
+    height: auto;
+    overflow: auto;
+    margin: 20% 5% ;
+  }
+}
+
+.contenedor-interno {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.naranja {
+  background-color: var(--naranja);
+}
+
+.verdecito {
+  background-color: var(--verdecito);
+}
+
+.verde {
+  background-color: var(--verde);
+}
+
+/* Iconos */
+.iconos {
+  display: flex;
+  justify-content: start;
+  padding-top: 1rem;
+}
+
+/* Botones */
+.button {
+  border-color: var(--transparentBlanco);
+  color: var(--transparentBlanco);
+  font-family: var(--Fuente1);
+  border-radius: 70px;
+  padding: 10px;
+  font-size: 15px;
+  width: 70%;
+}
+
+.boton-naranja:hover {
+  cursor: pointer;
+  background-color: var(--naranja);
+  color: var(--transparentBlanco);
+  border: 0.15rem solid var(--transparentBlanco);
+}
+
+.boton-verdecito:hover {
+  cursor: pointer;
+  background-color: var(--verdecito);
+  color: var(--transparentBlanco);
+  border: 0.15rem solid var(--transparentBlanco);
+}
+
+.boton-verde:hover {
+  cursor: pointer;
+  background-color: var(--verde);
+  color: var(--transparentBlanco);
+  border: 0.15rem solid var(--transparentBlanco);
+}
+
+.boton-naranja {
+  color: var(--naranja);
+}
+
+.boton-verdecito {
+  color: var(--verdecito);
+}
+
+.boton-verde {
+  color: var(--verde);
+}
